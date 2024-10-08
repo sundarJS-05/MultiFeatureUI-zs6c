@@ -9,6 +9,7 @@ const App = () => {
     <OTTSeries/>
     <hr/>
 
+    {/* rendering Profile-EXTRA component */}
     <section>
       <Profile/>
 

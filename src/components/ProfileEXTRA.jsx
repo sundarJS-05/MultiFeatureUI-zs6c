@@ -34,7 +34,7 @@ function Profile() {
   export default Profile;
   
 
-//  ---- getting and destructuring above props (actually to be done in diff file)
+//  ---- 1st method - getting and destructuring above props
 
 function ProfileCard(props){
 
@@ -57,3 +57,27 @@ function ProfileCard(props){
     )
 
 }
+
+
+// // 2nd -destructuring method
+// function ProfileCard({name, age, greeting, children}){
+
+//     return (
+//         <>
+//         <h3 > Name: {name} </h3>
+//         <h3 > Age: {age} </h3>
+
+//         {/* thoughts its JSX; accessing emthod is same */}
+//         <h3 > Greeting: {greeting} </h3>
+
+//         <section >
+
+//             {/* accessing text written inside  (as props.children) inside ProfileCard component */}
+
+//             {children}
+            
+//         </section>
+//         </>
+//     )
+
+// }
