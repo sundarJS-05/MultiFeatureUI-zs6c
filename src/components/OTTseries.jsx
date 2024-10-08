@@ -1,46 +1,27 @@
 import seriesData from '../api/seriesAPI.json'
+import SeriesCard from './SeriesCard'
 
 
 const OTTSeries = ()=>{
 
-    // let age = 46
-  
-    return (
-
+     return (
       <ul>
 
-              {seriesData.map(  (curElem)=>{
+        { seriesData.map(  (curElem)=>{
 
-                return(
-                
-              <li key={curElem.id}>
+          return (
 
-              <h3>{curElem.name}</h3>
+          <SeriesCard key={curElem.id} data={curElem} />
 
-              <div> <img src={curElem.img_url} height="80"/>  </div>
+          // there are 2 props here - key & curElem
 
-              <div> {curElem.genre} </div>
+          )
 
-              <span> {curElem.rating} </span>
+        })}
 
-              <h5>
-              {curElem.description}
-              </h5>
+      </ul>
+     )
 
-              <br/>
-
-              <a href={curElem.watch_url} target='_blank'> WATCH NOW! </a>
-
-            </li>
-
-           )
-        }
-        
-      )}
-   
-    </ul>
-
-    )
   }
 
 export default OTTSeries
