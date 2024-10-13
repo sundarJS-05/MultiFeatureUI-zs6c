@@ -1,6 +1,7 @@
 import React from 'react'
 import OTTSeries, { Footer } from './components/OTTseries'
 import Profile from './components/ProfileEXTRA'
+import EvtHdlng from './components/EvtHdlng'
 
 const App = () => {
   return (
@@ -11,13 +12,16 @@ const App = () => {
 
     {/* rendering Profile-EXTRA component */}
     <section>
-      <Profile/>
+      {/* <Profile/> */}
 
     </section>
 
     <hr/>
     
     <section>
+      <EvtHdlng/>
+      <br/>
+      <br/>
       <Footer/>
     </section>
 

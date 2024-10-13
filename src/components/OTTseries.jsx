@@ -1,11 +1,12 @@
 import seriesData from '../api/seriesAPI.json'
 import SeriesCard from './SeriesCard'
+import '../styles/OTTSeries.css'
 
 
 const OTTSeries = ()=>{
 
      return (
-      <ul>
+      <ul >
 
         { seriesData.map(  (curElem)=>{
 

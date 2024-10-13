@@ -11,23 +11,28 @@ const SeriesCard = ( props ) => {
 
        return(
   
-            <li key={id}>
+            <li key={id}  className='card'>
+
+                <div>  <img src={img_url}  />   </div>
+
+                <div className='flex-col flex gap-3'>
 
             <h3>{name}</h3>
 
-            <div> <img src={img_url} height="80"/>  </div>
 
             <div> {genre} </div>
 
             <span> {rating} </span>
 
-            <h5>
+            <h5 className='text-sm font-semilight italic px-2 mx-2'>
             {description}
             </h5>
 
             <br/>
 
             <a href={watch_url} target='_blank'> WATCH NOW! </a>
+
+            </div>
 
             </li>
 
