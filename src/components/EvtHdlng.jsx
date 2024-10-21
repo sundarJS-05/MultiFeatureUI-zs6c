@@ -15,25 +15,36 @@ const EvtHdlng = () => {
 
   return (
     <>
-      <button   onClick={ handleBtnClick }>
+
+        <div>
+
+        <button   onClick={ handleBtnClick }>
         BTN 1 --Click to trigger event
         </button>
 
-        <br/>
-        <hr/>
+        </div>
 
+        <hr/><hr/>
+
+        <div>
         <button   onClick={ ()=>{ handleBtnClick()  } }>
         BTN 2 --Click to trigger event
         </button>
+        </div>
 
-        <br/>
-        <hr/>
+        <hr/><hr/>
+
+        <div>
 
         <button onClick={ ()=> {
             welcomeUser('guest 2')
         }} >
             User Btn
         </button>
+
+        </div>
+
+        <hr/><hr/>
 
     </>
   )
